@@ -33,13 +33,10 @@ def extract_tags_from_content(content: str) -> list:
 def prepare_article_body(content: str) -> str:
     """
     Prepare article body for Dev.to.
-    Remove title (Dev.to adds it separately) and clean up.
+    Remove title (Dev.to adds it separately) but KEEP the subtitle.
     """
     # Remove first H1 heading (title)
     body = re.sub(r'^#\s+.+$', '', content, count=1, flags=re.MULTILINE)
-    
-    # Remove subtitle if it's the next line
-    body = re.sub(r'^\*\*.+\*\*$', '', body, count=1, flags=re.MULTILINE)
     
     # Clean up extra newlines at the start
     body = body.lstrip('\n')

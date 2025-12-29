@@ -2,6 +2,8 @@
 
 **How I Built an Intelligent System to Automatically Detect When OpenAPI Specs Diverge from Reality**
 
+![Title](https://raw.githubusercontent.com/aniket-work/ai-api-validator/main/images/title_image.svg)
+
 ## TL;DR
 
 API documentation drift is a silent killer of developer productivity. In this article, I share my journey building an AI-powered validator that automatically compares OpenAPI specifications against live API behavior, using GPT-4 to provide intelligent insights. The system detects schema mismatches, tracks specification changes over time, and generates actionable reports—saving teams from the frustration of outdated docs.

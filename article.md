@@ -2,7 +2,7 @@
 
 **How I Built an Intelligent System to Automatically Detect When OpenAPI Specs Diverge from Reality**
 
-![Title](https://raw.githubusercontent.com/aniket-work/ai-api-validator/main/images/title_image.svg)
+![Title](https://raw.githubusercontent.com/aniket-work/ai-api-validator/main/images/title_diagram.png)
 
 ## TL;DR
 

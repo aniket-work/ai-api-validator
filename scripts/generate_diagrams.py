@@ -15,6 +15,23 @@ def generate_diagrams():
     images_dir.mkdir(exist_ok=True)
     
     diagrams = {
+        "title_diagram": """
+graph LR
+    subgraph " "
+        direction LR
+        A["OpenAPI Spec"] --> B["AI Validator"]
+        C["Live API"] --> B
+        B --> D["GPT-4 Analysis"]
+        D --> E["Drift Detected?"]
+        E -- Yes --> F["Smart Report"]
+        E -- No --> G["API in Sync"]
+    end
+    
+    style B fill:#38bdf8,stroke:#0f172a,stroke-width:2px,color:#fff
+    style D fill:#818cf8,stroke:#0f172a,stroke-width:2px,color:#fff
+    style F fill:#f472b6,stroke:#0f172a,stroke-width:2px,color:#fff
+    style G fill:#10b981,stroke:#0f172a,stroke-width:2px,color:#fff
+""",
         "architecture_diagram": """
 graph TB
     subgraph "API Documentation Validator"

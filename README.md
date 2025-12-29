@@ -1,6 +1,6 @@
 # AI-Powered API Documentation Validator
 
-![Title](https://raw.githubusercontent.com/aniket-work/ai-api-validator/main/images/title_image.svg)
+![Title](https://raw.githubusercontent.com/aniket-work/ai-api-validator/main/images/title_diagram.png)
 
 **Automatically detect drift between your OpenAPI specifications and actual API implementations using AI**
 
